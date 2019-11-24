@@ -2,6 +2,17 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "" # the name of your site, e.g. ACME Corp.
+lang: en_US
+author: David Lee
+description: The homepage and blog of David Lee, a graduate student in computer science at UCLA.
+social:
+  name: David Lee
+  links:
+    - https://github.com/davidkml
+    - https://linkedin.com/in/davidkmlee
+
+plugins:
+  - jekyll-seo-tag
 
 # Misc
 livereload: true
