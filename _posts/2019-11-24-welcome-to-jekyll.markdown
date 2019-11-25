@@ -4,6 +4,7 @@ title: "Welcome to Jekyll!"
 date: 2019-11-24 14:38:55 -0800
 categories: jekyll update
 author: David Lee
+excerpt: A small blurb about this blog post.
 permalink:
 ---
 

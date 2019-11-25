@@ -5,6 +5,7 @@ title: "Neural" # the name of your site, e.g. ACME Corp.
 lang: en_US
 author: David Lee
 description: The homepage and blog of David Lee, a graduate student in computer science at UCLA.
+show_excerpts: true
 social:
   name: David Lee
   links:
