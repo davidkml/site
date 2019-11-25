@@ -6,17 +6,18 @@
   
   {% include header.html %}
     <div class="container padding-md">
-    <div class="columns">
-      <div class="column is-one-quarter-tablet is-one-fifth-widescreen">
-        {% include sidebar.html %}
-      </div>
-      <div class="column">
-          {{ content}}
+      <div class="columns">
+        <div class="column is-one-quarter-tablet is-one-fifth-widescreen">
+          {% include sidebar.html %}
+        </div>
+        <div class="column">
+            {{ content}}
 
+        </div>
       </div>
+      {% include footer.html %}
     </div>
-    {% include scripts.html %}
-  </div>
+  {% include scripts.html %}
 </body>
 
 </html>
