@@ -9,5 +9,18 @@ body {
   font-family: $bodyFont;
 }
 
+.profile {
+  align-self: center;
+  max-width: 128px;
+  border-radius: 64px;
+}
+
+@media screen and (max-width: 768px) {
+  .profile {
+    align-self: center;
+    max-width: 64px;
+  }
+}
+
 // Import partials.
 @import "partials/spacing.scss";
