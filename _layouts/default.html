@@ -2,10 +2,21 @@
 <html lang="{{ site.lang | default: "en-US" }}">
 {% include head.html %}
 
-<body>
+<body class="has-navbar-fixed-top">
+  
   {% include header.html %}
-  {{ content}}
-  {% include scripts.html %}
+    <div class="container">
+    <div class="columns">
+      <div class="column is-one-quarter-tablet is-one-fifth-desktop">
+        {% include sidebar.html %}
+      </div>
+      <div class="column">
+          {{ content}}
+
+      </div>
+    </div>
+    {% include scripts.html %}
+  </div>
 </body>
 
 </html>

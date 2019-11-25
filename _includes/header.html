@@ -1,29 +1,30 @@
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a href="/" class="navbar-item">
-      <img class="image is-24x24 margin-r-sm" src="../images/temp-logo.svg"
-        alt="Neural: Homepage and blog of David Lee" />
-      {{ site.title | escape }}
-    </a>
+<nav aria-label="main navigation" class="navbar is-fixed-top" role="navigation">
+    <div class="container">
 
-    <a role="button" class="navbar-burger is-mobile" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start">
-      {% for link in site.data.navigation %}
-      {% if link.url contains 'http' %}
-      {% assign domain = '' %}
-      {% else %}
-      {% assign domain = site.url %}
-      {% endif %}
-      <a class="navbar-item" href="{{ domain }}{{ link.url }}{% if link.url contains 'http' %}target="
-        _blank"{% endif %}">{{ link.title }}</a>
-      {% endfor %}
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <img alt="Neural: Homepage and blog of David Lee" class="image is-24x24 margin-r-sm" src="../images/temp-logo.svg"/>
+                {{ site.title | escape }}
+            </a>
 
+            <a aria-expanded="false" aria-label="menu" class="navbar-burger is-mobile" role="button">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                {% for link in site.data.navigation %}
+                    {% if link.url contains 'http' %}
+                        {% assign domain = '' %}
+                    {% else %}
+                        {% assign domain = site.url %}
+                    {% endif %}
+                    <a class="navbar-item" href="{{ domain }}{{ link.url }}{% if link.url contains 'http' %}target=" _blank "{% endif %}">{{ link.title }}</a>
+                {% endfor %}
+
+            </div>
+        </div>
     </div>
-  </div>
 </nav>
