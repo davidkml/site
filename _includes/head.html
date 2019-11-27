@@ -1,22 +1,25 @@
 <head>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <meta charset="utf-8"/>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <title>{{ site.author }}
         |
         {{ site.title }}</title>
 
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700|PT+Serif:400,400i,700&display=swap" rel="stylesheet"/>
-    <link href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700|PT+Serif:400,400i,700&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 
     {% seo %}
     {% if jekyll.environment == 'production' and site.google_analytics %}
-        {% include google-analytics.html %}
+    {% include google-analytics.html %}
     {% endif %}
 
     <!-- Mathjax Support -->
-    <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=default">
+        </script>
 
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
