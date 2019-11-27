@@ -3,9 +3,14 @@
 
         <div class="navbar-brand">
             <a class="navbar-item" href="/">
-                <img alt="Brighten: Homepage and Blog of David Lee" class="image is-24x24 margin-r-sm"
-                    src="{{"/images/logo.jpg" | relative_url }}" />
-                {{ site.title | escape }}
+                <!-- <img alt="Brighten: Homepage and Blog of David Lee" class="image is-24x24 margin-r-sm"
+                    src="{{"/images/logo.jpg" | relative_url }}" /> -->
+                <span class="icon has-text-warning is-medium">
+                    <i class="fas fa-sun"></i>
+                </span>
+                <p class="content has-text-weight-bold">
+                    {{ site.title | escape }}
+                </p>
             </a>
 
             <a aria-expanded="false" aria-label="menu" class="navbar-burger is-mobile" role="button">
@@ -23,7 +28,14 @@
                 {% assign domain = site.url %}
                 {% endif %}
                 <a class="navbar-item" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}
-                    target="_blank" {% endif %} ">{{ link.title }}</a>
+                    target="_blank" {% endif %} ">
+                    <span class=" icon is-hidden-mobile is-medium has-text-{{ link.color }}">
+                    <i class="{{ link.icon }}""></i>
+                    </span>
+                    <p class=" content">
+                        {{ link.title }}
+                        </p>
+                </a>
                 {% endfor %}
 
             </div>

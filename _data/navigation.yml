@@ -2,12 +2,18 @@
 
 - title: About Me
   url: /about/
+  icon: fas fa-user
+  color: primary
 
 - title: Posts
   url: /posts/
+  icon: fas fa-book
+  color: info
 
 - title: Projects
   url: https://github.com/davidkml
-
+  icon: fas fa-rocket
+  color: link
+  
 # - title: Contact
 #   url: /contact/
