@@ -21,7 +21,7 @@
                     {% else %}
                         {% assign domain = site.url %}
                     {% endif %}
-                    <a class="navbar-item" href="{{ domain }}{{ link.url }}{% if link.url contains 'http' %}target=" _blank "{% endif %}">{{ link.title }}</a>
+                    <a class="navbar-item" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %} target="_blank" {% endif %} ">{{ link.title }}</a>
                 {% endfor %}
 
             </div>
