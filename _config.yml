@@ -1,7 +1,7 @@
 # Site config
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "Neural" # the name of your site, e.g. ACME Corp.
+title: "Brighten" # the name of your site, e.g. ACME Corp.
 lang: en_US
 author: David Lee
 description: The homepage and blog of David Lee, a graduate student in computer science at UCLA.
