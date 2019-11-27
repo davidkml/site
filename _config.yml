@@ -12,9 +12,6 @@ social:
     - https://github.com/davidkml
     - https://linkedin.com/in/davidkmlee
 
-linkedin_username: davidkmlee
-github_username: davidkml
-
 plugins:
   - jekyll-seo-tag
 
