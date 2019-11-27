@@ -4,42 +4,43 @@ layout: default
 
 <div id="index">
     {% if page.title%}
-        <h1 class="content title">{{ page.title }}</h1>
+    <h1 class="content is-large has-text-weight-bold">{{ page.title }}</h1>
     {% endif%}
 
     <ul>
         {% for post in site.posts %}
-            {% unless post.next %}
-                <h3 class="content is-medium has-text-weight-bold is-marginless padding-b-sm">{{ post.date | date: '%Y' }}</h3>
-            {% else %}
+        {% unless post.next %}
+        <h3 class="content is-medium has-text-weight-bold is-marginless padding-b-sm">{{ post.date | date: '%Y' }}</h3>
+        {% else %}
 
-                {% capture year %}
-                    {{ post.date | date: '%Y' }}
-                {% endcapture %}
+        {% capture year %}
+        {{ post.date | date: '%Y' }}
+        {% endcapture %}
 
-                {% capture next_year %}
-                    {{ post.next.date | date: '%Y' }}
-                {% endcapture %}
+        {% capture next_year %}
+        {{ post.next.date | date: '%Y' }}
+        {% endcapture %}
 
-                {% if year != next_year %}
-                    <h3 class="content is-medium has-text-weight-bold is-marginless padding-b-sm">{{ post.date | date: '%Y' }}</h3>
-                {% endif %}
+        {% if year != next_year %}
+        <h3 class="content is-medium has-text-weight-bold is-marginless padding-b-sm">{{ post.date | date: '%Y' }}</h3>
+        {% endif %}
 
-            {% endunless %}
+        {% endunless %}
 
-            <li>
-                <div class="level margin-b-md">
-                    <div class="level-left">
-                        <div>
-                            <a class="content post-link has-text-black has-text-weight-bold" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-                            <p class="content">{{ post.excerpt }}</p>
-                        </div>
-                    </div>
-                    <div class="level-right">
-                        <p class="content is-small">{{ post.date | date_to_long_string: "ordinal", "US" }}</p>
+        <li>
+            <div class="level margin-b-md">
+                <div class="level-left">
+                    <div>
+                        <a class="content post-link has-text-black has-text-weight-bold"
+                            href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                        <p class="content">{{ post.excerpt }}</p>
                     </div>
                 </div>
-            </li>
+                <div class="level-right">
+                    <p class="content is-small">{{ post.date | date_to_long_string: "ordinal", "US" }}</p>
+                </div>
+            </div>
+        </li>
         {% endfor %}
     </ul>
-</div> 
+</div>

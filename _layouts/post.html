@@ -3,19 +3,19 @@ layout: default
 ---
 <article class="post">
     <header class="post-header">
-        <h1 class="title post-title">
+        <h1 class="content title is-large has-text-weight-bold post-title">
             {{ page.title | escape }}
         </h1>
 
-        <p class="content subtitle post-meta margin-b-md">
+        <p class="content subtitle is-medium post-meta margin-b-md">
             <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
                 {{ page.date | date_to_long_string: "ordinal", "US" }}
             </time>
             {% if page.author %}
-                •
-                <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                    <span class="p-author h-card" itemprop="name">{{ page.author }}</span>
-                </span>
+            •
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <span class="p-author h-card" itemprop="name">{{ page.author }}</span>
+            </span>
             {% endif %}
         </p>
     </header>
@@ -25,7 +25,7 @@ layout: default
     </div>
 
     {%- if site.disqus.shortname -%}
-        {%- include disqus_comments.html -%}
+    {%- include disqus_comments.html -%}
     {%- endif -%}
 
     <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
