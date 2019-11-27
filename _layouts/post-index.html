@@ -10,7 +10,7 @@ layout: default
     <ul>
         {% for post in site.posts %}
             {% unless post.next %}
-                <h3 class="content subtitle has-text-weight-bold">{{ post.date | date: '%Y' }}</h3>
+                <h3 class="content is-medium has-text-weight-bold is-marginless padding-b-sm">{{ post.date | date: '%Y' }}</h3>
             {% else %}
 
                 {% capture year %}
@@ -22,7 +22,7 @@ layout: default
                 {% endcapture %}
 
                 {% if year != next_year %}
-                    <h3 class="content subtitle has-text-weight-bold">{{ post.date | date: '%Y' }}</h3>
+                    <h3 class="content is-medium has-text-weight-bold is-marginless padding-b-sm">{{ post.date | date: '%Y' }}</h3>
                 {% endif %}
 
             {% endunless %}
@@ -31,12 +31,12 @@ layout: default
                 <div class="level margin-b-md">
                     <div class="level-left">
                         <div>
-                            <a class="content post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-                            <p>{{ post.excerpt }}</p>
+                            <a class="content post-link has-text-black has-text-weight-bold" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                            <p class="content">{{ post.excerpt }}</p>
                         </div>
                     </div>
                     <div class="level-right">
-                        <p>{{ post.date | date_to_long_string: "ordinal", "US" }}</p>
+                        <p class="content is-small">{{ post.date | date_to_long_string: "ordinal", "US" }}</p>
                     </div>
                 </div>
             </li>

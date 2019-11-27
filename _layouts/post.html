@@ -6,17 +6,17 @@ layout: default
         <h1 class="title post-title">
             {{ page.title | escape }}
         </h1>
-        <p class="subtitle post-meta margin-b-lg">
+
+        <p class="content subtitle post-meta margin-b-md">
             <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                {{ page.date | date: date_format }}
+                {{ page.date | date_to_long_string: "ordinal", "US" }}
             </time>
-            {%- if page.author -%}
+            {% if page.author %}
                 •
                 <span itemprop="author" itemscope itemtype="http://schema.org/Person">
                     <span class="p-author h-card" itemprop="name">{{ page.author }}</span>
                 </span>
-            {%- endif -%}
+            {% endif %}
         </p>
     </header>
 
