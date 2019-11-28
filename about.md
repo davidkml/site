@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "About Me"
-permalink: /about/
 ---
 
 I am a graduate student in the Department of Computer Science at UCLA. My research interests are in statistical and machine learning, especially in areas addressing the diverse space of problems associated with large-scale training and inference. Among other things, I am interested in studying new algorithmic and infrastructural optimization methods to improve the efficiency of model training and meet the growing performance demands of prediction when deployed to real-time services and applications. Some specific application areas that interest me include computational genomics, text mining, and image processing.
