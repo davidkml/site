@@ -9,13 +9,13 @@
   url: /posts/
   icon: fas fa-book
   color: info
-  last: false
-
-- title: Projects
-  url: https://github.com/davidkml
-  icon: fas fa-rocket
-  color: link
   last: true
+
+# - title: Projects
+#   url: https://github.com/davidkml
+#   icon: fas fa-rocket
+#   color: link
+#   last: true
 
 # - title: Contact
 #   url: /contact/
