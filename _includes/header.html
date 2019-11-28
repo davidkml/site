@@ -2,7 +2,7 @@
     <div class="container">
 
         <div class="navbar-brand">
-            <a class="navbar-item" href="/">
+            <a class="navbar-item" href={"/" | relative_url }>
                 <p class="content has-text-weight-bold">
                     {{ site.title | escape }}
                 </p>
@@ -17,19 +17,13 @@
         <div class="navbar-menu">
             <div class="navbar-start">
                 {% for link in site.data.navigation %}
-                {% if link.url contains 'http' %}
-                {% assign domain = '' %}
-                {% else %}
-                {% assign domain = site.url %}
-                {% endif %}
-                <a class="navbar-item" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}
-                    target="_blank" {% endif %} ">
+                <a class="navbar-item" href="{{ link.url | relative_url }}">
                     <span class=" icon is-hidden-touch is-medium has-text-{{ link.color }}">
-                    <i class="{{ link.icon }}""></i>
+                        <i class="{{ link.icon }}""></i>
                     </span>
                     <p class=" content">
-                        {{ link.title }}
-                        </p>
+                            {{ link.title }}
+                            </p>
                 </a>
                 {% endfor %}
 
