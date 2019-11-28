@@ -1,13 +1,13 @@
 # Site config
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "Brighten" # the name of your site, e.g. ACME Corp.
+title: "David K. Lee" # the name of your site, e.g. ACME Corp.
 lang: en_US
-author: David Lee
+author: David K. Lee
 description: The homepage and blog of David Lee, a graduate student in computer science at UCLA.
 show_excerpts: true
 social:
-  name: David Lee
+  name: David K. Lee
   links:
     - https://github.com/davidkml
     - https://linkedin.com/in/davidkmlee
