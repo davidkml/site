@@ -24,7 +24,7 @@
                 {% endif %}
                 <a class="navbar-item" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}
                     target="_blank" {% endif %} ">
-                    <span class=" icon is-hidden-mobile is-medium has-text-{{ link.color }}">
+                    <span class=" icon is-hidden-touch is-medium has-text-{{ link.color }}">
                     <i class="{{ link.icon }}""></i>
                     </span>
                     <p class=" content">
@@ -33,6 +33,17 @@
                 </a>
                 {% endfor %}
 
+            </div>
+            <div class="navbar-end is-hidden-touch">
+                {% for link in site.data.social %}
+                <a class="navbar-item" href="{{link.url}}">
+
+                    <span class="icon">
+
+                        <i class="fab fa-lg fa-{{ link.type }}"></i>
+                    </span>
+                </a>
+                {% endfor%}
             </div>
         </div>
     </div>
