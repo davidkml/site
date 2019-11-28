@@ -4,13 +4,7 @@
             © {{ site.time | date: '%Y' }} {{ site.title }}
             •
             {% for link in site.data.navigation %}
-            {% if link.url contains 'http' %}
-            {% assign domain = '' %}
-            {% else %}
-            {% assign domain = site.url %}
-            {% endif %}
-            <a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %} target="_blank" {% endif %}
-                class="has-text-black">
+            <a href="{{ link.url | relative_url }}" class="has-text-black">
                 {{ link.title }}
             </a>
             {% unless link.last %}
