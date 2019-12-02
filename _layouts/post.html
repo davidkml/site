@@ -7,10 +7,22 @@ layout: default
             {{ page.title | escape }}
         </h1>
 
-        <p class="content subtitle is-medium post-meta margin-b-md">
-            <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-                {{ page.date | date_to_long_string: "ordinal", "US" }}
-            </time>
+        <p class="content subtitle post-meta margin-b-md">
+            <p>
+                Published:
+                <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                    {{ page.date | date_to_long_string: "ordinal", "US" }}
+                </time>
+            </p>
+            {% if page.edited %}
+            <p>
+                Last Edited:
+                <time class="dt-edited" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                    {{ page.edited | date_to_long_string: "ordinal", "US" }}
+                </time>
+            </p>
+            {% endif %}
+
             {% if page.author %}
             •
             <span itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -20,7 +32,7 @@ layout: default
         </p>
     </header>
 
-    <div class="content post-content" itemprop="articleBody">
+    <div class="content post-content margin-t-md" itemprop="articleBody">
         {{ content }}
     </div>
 
