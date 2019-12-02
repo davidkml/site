@@ -2,7 +2,7 @@
 layout: post
 title: "The Heart of a Matrix"
 date: 2019-11-26
-edited: 2018-12-30
+edited: 2019-12-30
 excerpt: A re-introduction to linear algebra, framed in terms of matrix action.
 ---
 
