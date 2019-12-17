@@ -1,0 +1,27 @@
+{
+  "name": "my-site",
+  "version": "1.0.0",
+  "description": "My homepage and blog where I write about math, machine learning, statistics, and other random things.",
+  "main": "index.js",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url _sass/mystyles.scss assets/css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidkml/dkl-site.git"
+  },
+  "author": "David Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidkml/dkl-site/issues"
+  },
+  "homepage": "https://github.com/davidkml/dkl-site#readme",
+  "devDependencies": {
+    "bulma": "^0.8.0",
+    "font-awesome": "^4.7.0",
+    "node-sass": "^4.13.0"
+  },
+  "dependencies": {}
+}

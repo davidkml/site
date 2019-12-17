@@ -15,4 +15,4 @@ plugins:
   - jekyll-seo-tag
 
 # Misc
-# livereload: true
+livereload: true
