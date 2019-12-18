@@ -3,19 +3,19 @@ layout: default
 ---
 <article class="post">
     <header class="post-header">
-        <h1 class="content title is-large has-text-weight-bold post-title">
+        <h1 class="content title is-large has-text-centered has-text-weight-bold post-title">
             {{ page.title | escape }}
         </h1>
 
         <p class="content subtitle post-meta margin-b-md">
-            <p>
+            <p class="has-text-centered">
                 Published:
                 <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
                     {{ page.date | date_to_long_string: "ordinal", "US" }}
                 </time>
             </p>
             {% if page.edited %}
-            <p>
+            <p class="has-text-centered">
                 Last Edited:
                 <time class="dt-edited" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
                     {{ page.edited | date_to_long_string: "ordinal", "US" }}
