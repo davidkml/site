@@ -5,7 +5,7 @@
 #   color: primary
 #   last: false
 
-- title: Blog
+- title: Posts
   url: /posts/
   icon: fas fa-book
   color: success
