@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+@import "partials/spacing.scss";
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700');
+
+$family-serif: 'PT Serif', serif;
+$family-primary: $family-serif;
+
+// Bulma Imports
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";
 
