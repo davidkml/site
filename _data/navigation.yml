@@ -5,17 +5,16 @@
 #   color: primary
 #   last: false
 
-- title: Posts
+- title: Blog
   url: /posts/
   icon: fas fa-book
-  color: info
-  last: true
+  color: success
 
-# - title: Projects
-#   url: https://github.com/davidkml
-#   icon: fas fa-rocket
-#   color: link
-#   last: true
+- title: Projects
+  url: https://github.com/davidkml
+  icon: fas fa-rocket
+  color: danger
+  last: true
 
 # - title: Contact
 #   url: /contact/

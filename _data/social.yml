@@ -1,6 +1,8 @@
 # Social media links
 
-- type: github
+- type: GitHub
   url: https://github.com/davidkml
-- type: linkedin
+  color: black
+- type: LinkedIn
   url: https://linkedin.com/in/davidkmlee
+  color: info

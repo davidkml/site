@@ -1,12 +1,19 @@
 <nav aria-label="main navigation" class="navbar is-fixed-top has-shadow" role="navigation">
     <div class="container">
-
         <div class="navbar-brand">
             <a class="navbar-item" href={{"/" | relative_url }}>
-                <p class="content has-text-weight-bold">
+                <h1 class=" content is-medium has-text-weight-bold">
                     {{ site.title | escape }}
-                </p>
+                </h1>
             </a>
+
+            {% for link in site.data.social %}
+            <a class="navbar-item is-hidden-desktop" href="{{ link.url }}">
+                <span class="icon has-text-{{ link.type | downcase }}">
+                    <i class="fab fa-lg fa-{{ link.type | downcase }}"></i>
+                </span>
+            </a>
+            {% endfor %}
 
             <a aria-expanded="false" aria-label="menu" class="navbar-burger is-mobile" role="button">
                 <span aria-hidden="true"></span>
@@ -14,29 +21,35 @@
                 <span aria-hidden="true"></span>
             </a>
         </div>
+
         <div class="navbar-menu">
             <div class="navbar-start">
                 {% for link in site.data.navigation %}
                 <a class="navbar-item" href="{{ link.url | relative_url }}">
-                    <span class=" icon is-hidden-touch is-medium has-text-{{ link.color }}">
+                    <span class="icon is-medium has-text-{{ link.color }}">
                         <i class="{{ link.icon }}""></i>
                     </span>
-                    <p class=" content">
+                    <span class=" content is-family-sans-serif">
                             {{ link.title }}
-                            </p>
+                    </span>
                 </a>
                 {% endfor %}
 
             </div>
             <div class="navbar-end is-hidden-touch">
                 {% for link in site.data.social %}
-                <a class="navbar-item" href="{{link.url}}">
 
-                    <span class="icon">
-
-                        <i class="fab fa-lg fa-{{ link.type }}"></i>
-                    </span>
-                </a>
+                <div class="navbar-item">
+                    <a class="button is-small is-rounded is-outlined is-{{ link.type | downcase }}"
+                        href="{{ link.url }}">
+                        <span class="icon is-medium">
+                            <i class="fab fa-lg fa-{{ link.type | downcase }}"></i>
+                        </span>
+                        <span class="content is-family-sans-serif">
+                            {{ link.type }}
+                        </span>
+                    </a>
+                </div>
                 {% endfor%}
             </div>
         </div>
