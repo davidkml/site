@@ -22,7 +22,12 @@ layout: default
                     {% endif %}</p>
                 <p class="content is-small is-italic is-marginless padding-b-md">Advisors: {{ item.advisors }}</p>
 
-                <p class="content margin-l-md">{{ item.abstract }}</p>
+                <div class="margin-l-md margin-b-lg">
+                    <p class="content">{{ item.abstract }}</p>
+                    {% if item.other %}
+                    <p class="content">{{ item.other }}</p>
+                    {% endif %}
+                </div>
             </div>
         </li>
         {% endfor %}
@@ -38,7 +43,7 @@ layout: default
             <p class="content has-text-weight-bold is-marginless">{{ item.title }}</p>
             <p class="content is-small is-italic is-marginless">{{ item.dates }}</p>
             <p class="content is-small is-italic is-marginless padding-b-md">{{ item.affiliation }}</p>
-            <div class="margin-l-md">
+            <div class="margin-l-md margin-b-lg">
 
                 <p class="content is-marginless padding-b-md">{{ item.description }}</p>
                 <p class="content">Read more about this project on <a href="{{ item.url }}"
