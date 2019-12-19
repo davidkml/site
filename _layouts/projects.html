@@ -48,7 +48,12 @@ layout: default
                 <p class="content is-marginless padding-b-md">{{ item.description }}</p>
                 <p class="content">Read more about this project on <a href="{{ item.url }}"
                         class="content is-italic">Github</a>.</p>
-                <img src="{{ item.image | relative_url }}" alt="">
+                <div class="level">
+                    <div class="level-item">
+
+                        <img src="{{ item.image | relative_url }}" alt="">
+                    </div>
+                </div>
             </div>
         </div>
         {% endfor %}
