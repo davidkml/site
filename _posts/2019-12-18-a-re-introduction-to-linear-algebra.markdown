@@ -7,7 +7,7 @@ excerpt: A return to basics.
 
 I recently read a passage that so eloquently captured a common outlook I believe so many students possess. This passage is an excerpt from a longer piece by Anne Fadiman, essayist and Professor of English at Yale, written in memory of her late student Marina Keegan. In her reflection, she wrote:
 
-> “Many of my students sound forty years old. They are articulate but derivative, their own voices muffled by their desire to skip over their current age and experience, which they fear trivial, and land on some version of polished adulthood without passing Go. Marina was twenty-one and sounded twenty-one: a brainy twenty-one, a twenty-one who knew her way around the English language, a twenty-one who understood that there were few better subjects than being young and uncertain and starry-eyed and frustrated and hopeful”
+> “Many of my students sound forty years old. They are articulate but derivative, their own voices muffled by their desire to skip over their current age and experience, which they fear trivial, and land on some version of polished adulthood without passing Go. Marina was twenty-one and sounded twenty-one: a brainy twenty-one, a twenty-one who knew her way around the English language, a twenty-one who understood that there were few better subjects than being young and uncertain and starry-eyed and frustrated and hopeful.”
 
 I believe we can all learn from the model Marina exemplified during her life.
 
