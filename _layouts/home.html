@@ -16,13 +16,16 @@ layout: default
     <ul class="post-list">
         {% for post in site.posts limit : 5 %}
         <li>
-            <div class="margin-b-md">
-                <div>
-                    <a class="content has-text-black has-text-weight-bold"
-                        href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-                    <p class="content is-small is-marginless">{{ post.date | date_to_long_string: "ordinal", "US" }}
-                    </p>
-                    <p class="content">{{ post.excerpt }}</p>
+            <div class="level margin-b-md">
+                <div class="level-left">
+                    <div>
+                        <a class="content post-link has-text-black has-text-weight-bold"
+                            href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                        <p class="content is-italic">{{ post.excerpt }}</p>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <p class="content is-small">{{ post.date | date_to_long_string: "ordinal", "US" }}</p>
                 </div>
             </div>
         </li>
