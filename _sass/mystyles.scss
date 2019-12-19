@@ -10,6 +10,7 @@ $family-primary: $family-serif;
 // Bulma Imports
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/layout/_all.sass";
 
 @import "../node_modules/bulma/sass/elements/container.sass";
 @import "../node_modules/bulma/sass/elements/title.sass";
@@ -36,4 +37,3 @@ $custom-colors: ("github": rgb(36 ,41 ,46),"linkedin": rgb(14, 118, 168));
         color: $color;
     }
 }
-
