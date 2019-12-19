@@ -1,0 +1,23 @@
+- title: Vms
+  dates: 4/2019- 6/2019
+  affiliation: Independent
+  url: https://github.com/davidkml/vc-made-simple
+  image: /images/vms-demo-compressed.gif
+  description: Git is a version control system that is well known in the software development community for its distinguished design which allows for fast, flexible, distributed, and nonlinear workflows. However, Git is also infamous for being intimidating and difficult to learn. As an exploration in solutions for addressing this, I design and develop a version control system that preserves the principal features of Git, which includes an application of content-addressed storage on the back-end and an interface that adds additional abstraction on the front-end.
+    
+
+- title: Developing Classifiers for Cancer Diagnosis
+  dates: 11/2017- 1/2018
+  affiliation: Independent
+  url: https://github.com/davidkml/cancer-diagnosis
+  image: /images/cancer-diagnosis.png
+  description: There has long been an interest in the potential for machine learning algorithms to develop sophisticated, accurate, and holistic models for the ever-increasing volume and dimensionality of biomedical data. Classification permeates patient care, and I demonstrate that even simple classifiers trained on sparse data can be refined to achieve remarkable accuracy and generalization performance.
+
+
+- title: Data-Driven Analytics for Email Marketing Performance
+  dates: 10/2016- 11/2016
+  affiliation: Independent
+  url: https://github.com/davidkml/email-campaign
+  image: /images/email-campaign.png
+  description: Data visualizations have a way of telling the stories that underlie our business processes. I perform exploratory analysis to visualize and mine insights from an email campaign and propose strategies for its improvement.
+

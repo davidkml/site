@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<nav class="breadcrumb" aria-label="breadcrumbs">
+    <ul class="is-family-sans-serif">
+        <li><a href="{{ "/" | relative_url }}">Home</a></li>
+        <li class="is-active"><a href="#" aria-current="page">Projects</a></li>
+    </ul>
+</nav>
+
+<section>
+    <h1 class="content title is-large has-text-weight-bold">Research</h1>
+    <h2 class="content subtitle is-small ">Highlights of research and academic work</h2>
+    <ul class="research-list">
+        {% for item in site.data.research %}
+        <li>
+            <div class="margin-b-md">
+                <p class="content has-text-weight-bold is-marginless">{{ item.organization }}</p>
+                <p class="content is-small is-italic is-marginless">{{ item.title }}{% if item.collaborators %} |
+                    {{ item.collaborators }}
+                    {% endif %}</p>
+                <p class="content is-small is-italic is-marginless padding-b-md">Advisors: {{ item.advisors }}</p>
+
+                <p class="content margin-l-md">{{ item.abstract }}</p>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+<hr>
+<section>
+    <h1 class="content title is-large has-text-weight-bold">Public Projects</h1>
+    <h2 class="content subtitle is-small ">Some personal projects I have released to the public</h2>
+    <ul>
+        {% for item in site.data.projects %}
+        <div class="margin-b-md">
+            <p class="content has-text-weight-bold is-marginless">{{ item.title }}</p>
+            <p class="content is-small is-italic is-marginless">{{ item.dates }}</p>
+            <p class="content is-small is-italic is-marginless padding-b-md">{{ item.affiliation }}</p>
+            <div class="margin-l-md">
+
+                <p class="content is-marginless padding-b-md">{{ item.description }}</p>
+                <p class="content">Read more about this project on <a href="{{ item.url }}"
+                        class="content is-italic">Github</a>.</p>
+                <img src="{{ item.image | relative_url }}" alt="">
+            </div>
+        </div>
+        {% endfor %}
+    </ul>
+</section>

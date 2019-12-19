@@ -11,7 +11,7 @@
   color: success
 
 - title: Projects
-  url: https://github.com/davidkml
+  url: /projects/
   icon: fas fa-rocket
   color: danger
   last: true
