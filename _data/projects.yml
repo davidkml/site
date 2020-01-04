@@ -11,7 +11,7 @@
   affiliation: Independent
   url: https://github.com/davidkml/cancer-diagnosis
   image: /images/cancer-diagnosis.png
-  description: There has long been an interest in the potential for machine learning algorithms to develop sophisticated, accurate, and holistic models for the ever-increasing volume and dimensionality of biomedical data. Classification permeates patient care, and I demonstrate that even simple classifiers trained on sparse data can be refined to achieve remarkable accuracy and generalization performance.
+  description: There has long been an interest in the potential for machine learning algorithms to develop sophisticated, accurate, and holistic models for the ever-increasing volume and dimensionality of biomedical data. Classification permeates patient care, and I demonstrate that even simple classifiers trained on "small" data can be refined to achieve remarkable accuracy and generalization performance.
 
 
 - title: Data-Driven Analytics for Email Marketing Performance

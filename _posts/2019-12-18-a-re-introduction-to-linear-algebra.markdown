@@ -11,7 +11,7 @@ I recently read a passage that so eloquently captured a common outlook I believe
 
 I believe we can all learn from the model Marina exemplified during her life.
 
-Professor Fadiman gave an accurate characterization of the way in which many of us subconsciously experience things through the colored lenses of our ambitions. We saw this perhaps most prevalently during the early years of my collegiate studies when we would frequently be in attendance of classes that contained, in so many ways, more relevant depth than we could have known when experiencing them for the first time. As a result, there is a tendency in these classes to endure and forget as students daydream about what they wish they can be doing instead.
+Professor Fadiman gave an accurate characterization of the way in which many of us subconsciously experience things through the colored lenses of our ambitions. We saw this perhaps most prevalently during the early years of our collegiate studies when we would frequently be in attendance of classes that contained, in so many ways, more relevant depth than we could have known when experiencing them for the first time. As a result, there is a tendency in these classes to endure and forget as students daydream about what they wish they can be doing instead.
 
 Linear algebra is one of those classes.
 
