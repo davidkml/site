@@ -4,7 +4,7 @@
   "description": "My homepage and blog where I write about math, machine learning, statistics, and other random things.",
   "main": "index.js",
   "scripts": {
-    "css-build": "node-sass --omit-source-map-url _sass/mystyles.scss assets/css/mystyles.css",
+    "css-build": "node-sass --omit-source-map-url _sass/mystyles.scss assets/css/mystyles.css --output-style compressed",
     "css-watch": "npm run css-build -- --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
