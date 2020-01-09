@@ -35,6 +35,38 @@ layout: default
 </section>
 <hr>
 <section>
+    <h1 class="content title is-large has-text-weight-bold">Publications</h1>
+    <h2 class="content subtitle is-small ">My published research</h2>
+    <ul class="publication-list">
+        {% for item in site.data.publications %}
+        <li>
+            <div class="margin-l-md margin-b-lg">
+                <p class="content">{{ item.citation }}
+                    {% if item.url %}
+                    <a href="{{ item.url }}">[ACS]</a>
+                    {% endif %}
+
+                </p>
+            </div>
+        </li>
+        {% endfor %}
+</section>
+<hr>
+<section>
+    <h1 class="content title is-large has-text-weight-bold">Presentations</h1>
+    <h2 class="content subtitle is-small ">Some public presentations</h2>
+    <ul class="publication-list">
+        {% for item in site.data.presentations %}
+        <li>
+            <div class="margin-l-md margin-b-lg">
+                <p class="content">{{ item.citation }}</p>
+            </div>
+        </li>
+        {% endfor %}
+</section>
+
+<hr>
+<section>
     <h1 class="content title is-large has-text-weight-bold">Selected Projects</h1>
     <h2 class="content subtitle is-small ">Some personal projects I have released to the public</h2>
     <ul>
