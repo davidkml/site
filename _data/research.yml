@@ -1,4 +1,5 @@
 - organization: University of California, Berkeley
+  dates: 1/2017- 5/2017
   title: Capstone Project
   collaborators: Christopher Ching, Linh Chung, Jaeyoung Park
   advisors: Dean C. Draemel, Ravindra Upadhye
@@ -6,12 +7,14 @@
 
 
 - organization: Lawrence Berkeley National Laboratory
+  dates: 2/2015- 5/2015
   title: Research Assistant, U.S. DOE Joint BioEnergy Institute
   advisors: Jay D. Keasling, Noppadon Sathitsuksanoh
   abstract: The highly cross-linked nature of lignocellulose is a critical barrier to the economic viability of bioconversion processes for generating high-value renewable bioproducts. We propose an integrated, feedstock agnostic deconstruction process that reduces crystallinity upward to 80% in the structural polysaccharides, leading to improved performance in downstream biosynthesis. This reduces the requirement for high enzyme loads and harsh process conditions, enabling more efficient, scalable, and selective extractions of targeted intermediates in the bioprocess pipeline.
 
 
-- organization: University of California 
+- organization: University of California, Berkeley
+  dates: 1/2014- 5/2014
   title: Special Research Project
   collaborators: Remi J. Leano
   advisors: Ronald C. Cohen, Jamie H. Doudna Cate
