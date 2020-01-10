@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<nav class="breadcrumb" aria-label="breadcrumbs">
+    <ul class="is-family-sans-serif">
+        <li><a href="{{ "/" | relative_url }}">Home</a></li>
+        <li class="is-active"><a href="#" aria-current="page">Contact</a></li>
+    </ul>
+</nav>
+
+<section>
+    {% if page.title%}
+    <h1 class="content is-large has-text-weight-bold">{{ page.title }}</h1>
+    {% endif%}
+
+    <p class="content">A contact form will arrive soon.</p>
+    <p class="content"> In the meantime, please feel free to connect with me
+        through <a href="https://linkedin.com/in/davidkmlee" target="_blank">LinkedIn</a> or <a
+            href="https://github.com/davidkml" target="_blank">GitHub</a>!</p>
+    </p>
+</section>
