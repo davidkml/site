@@ -37,3 +37,8 @@ $custom-colors: ("github": rgb(36 ,41 ,46),"linkedin": rgb(14, 118, 168));
         color: $color;
     }
 }
+
+.profile {
+    max-width: 120px;
+    border-radius: 60px;
+}
