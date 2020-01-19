@@ -3,8 +3,8 @@
   title: Capstone Project
   collaborators: Christopher Ching, Linh Chung, Jaeyoung Park
   advisors: Dean C. Draemel, Ravindra Upadhye
-  abstract: We propose a full-scale implementation of an industrial pipeline for ammonia synthesis designed through the computational encoding of models for the various abstraction layers of the process. We generate data from the models which enable the specification of design and operating parameters in silico and optimization of the process along scalability, robustness, and economic constraints.
-
+  abstract: We propose a full-scale implementation of an industrial pipeline for ammonia synthesis designed through the computational encoding of numerical models for the various abstraction layers of the process. We then generate data which enable process design, and operating parameter specification, and optimization in silico along scalability, robustness, and economic constraints.
+  
 - organization: Lawrence Berkeley National Laboratory
   dates: 2/2015- 5/2015
   title: Research Assistant, U.S. DOE Joint BioEnergy Institute
