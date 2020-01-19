@@ -3,8 +3,7 @@
   title: Capstone Project
   collaborators: Christopher Ching, Linh Chung, Jaeyoung Park
   advisors: Dean C. Draemel, Ravindra Upadhye
-  abstract: We propose a full-scale implementation of an industrial pipeline for ammonia synthesis designed through the computational encoding of models for the various abstraction layers of the process. Simulated data generated from the models enable the specification of design and operating parameters in silico which optimize the process along constraints such as scalability, robustness, safety, and economy.
-
+  abstract: We propose a full-scale implementation of an industrial pipeline for ammonia synthesis designed through the computational encoding of models for the various abstraction layers of the process. We generate data from the models which enable the specification of design and operating parameters in silico and optimization of the process along scalability, robustness, and economic constraints.
 
 - organization: Lawrence Berkeley National Laboratory
   dates: 2/2015- 5/2015
@@ -12,12 +11,10 @@
   advisors: Jay D. Keasling, Noppadon Sathitsuksanoh
   abstract: The highly cross-linked nature of lignocellulose is a critical barrier to the economic viability of bioconversion processes for generating high-value renewable bioproducts. We propose an integrated, feedstock agnostic deconstruction process that reduces crystallinity upward to 80% in the structural polysaccharides, leading to improved performance in downstream biosynthesis. This reduces the requirement for high enzyme loads and harsh process conditions, enabling more efficient, scalable, and selective extractions of targeted intermediates in the bioprocess pipeline.
 
-
 - organization: University of California, Berkeley
   dates: 1/2014- 5/2014
   title: Special Research Project
   collaborators: Remi J. Leano
   advisors: Ronald C. Cohen, Jamie H. Doudna Cate
-  abstract: The structure, size distribution, and surface chemistry of nanoparticulate iron oxide are key determinants of the usefulness of these materials in applications in vivo, such as MRI imaging, tissue repair, and drug delivery. We characterize the physicochemical properties iron oxide nanocrystals synthesized via the co-precipitation of iron salts, enabling an extrapolation of the action of these particles in biomedical contexts. This characterization also leads to the design of a method for the functionalization of nanocrystal surfaces with non-toxic and biocompatible polymers.
-
+  abstract: The structure, size distribution, and surface chemistry of nanoparticulate iron oxide are key determinants of the usefulness of these materials for applications in vivo, such as MRI imaging, tissue repair, and drug delivery. We characterize the physicochemical properties iron oxide nanocrystals synthesized via the coprecipitation of iron salts, enabling an extrapolation of the action of these particles in biomedical contexts. This characterization also leads to the design of a method for the functionalization of nanocrystal surfaces with non-toxic and biocompatible polymers.
   
